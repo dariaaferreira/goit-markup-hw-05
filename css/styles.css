@@ -290,6 +290,8 @@ a.current::after {
     cursor: pointer;
 }
 
+/* MODAL WINDOW ENDS*/
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
