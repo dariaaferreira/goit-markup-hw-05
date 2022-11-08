@@ -227,13 +227,14 @@ a.current::after {
     border-style: none;
 
     margin-top: 30px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .btn-main:hover, .btn-main:focus  {
     cursor: pointer;
     background-color: var(--bg-color-btn);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* MODAL WINDOW */
@@ -279,15 +280,17 @@ a.current::after {
 }
 
 .modal-button {
-
+    display: flex;
+    align-items: center;
     position: absolute;
     right: 8px;
     top: 8px;
-    width: 30px;
-    height: 30px;
-    border: none;
     background-color: transparent;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* MODAL WINDOW ENDS*/
@@ -457,7 +460,6 @@ img {
     fill: var(--client-icon-color);
 
     border-radius: 50%;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-item:not(:last-child) {
@@ -468,7 +470,7 @@ img {
 .social-link:focus {
     fill: var(--white-color);
     background-color: var(--active-color);
-    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -490,9 +492,6 @@ img {
     border-radius: 4px;
     fill: currentColor;
     color: var(--client-icon-color);
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 
@@ -500,6 +499,7 @@ img {
 .client-list-link:focus {
     border-color: var(--active-color);
     color: var(--active-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* F O O T E R */
@@ -592,7 +592,6 @@ img {
     height: 44px;
     fill: var(--white-color);
     border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -601,6 +600,7 @@ img {
 .social-link-footer:focus {
     fill: var(--white-color);
     background-color: var(--active-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -632,8 +632,6 @@ img {
     background: var(--bg-light);
     border-radius: 4px;
     border-style: none;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1),border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-portfolio:hover, .btn-portfolio:focus {
@@ -642,6 +640,7 @@ img {
     color:var(--white-color);
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1),border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:not(:last-child) {
@@ -664,11 +663,11 @@ img {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
 
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-item:hover, .card-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-content {
@@ -709,13 +708,13 @@ img {
 
     opacity: 1;
     transform: translateY(294px);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-projects:hover .description-position,
 .link-projects:focus .description-position {
     opacity: 1;
     transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
