@@ -648,7 +648,7 @@ img {
     color: var(--main-color);
     background: var(--bg-light);
     border-radius: 4px;
-    border-style: none;
+    border-style: none; 
 }
 
 .btn-portfolio:hover, .btn-portfolio:focus {
